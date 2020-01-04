@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rails 6 + VueJS + TailwindCSS with turbolinks Starter Kit</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+<body lang="<%= I18n.locale %>" class="bg-gray-200 font-sans leading-normal tracking-normal">
+<%= render 'layouts/header' %>
+
+
+<div class="container mx-auto justify-center">
+
+  <%= yield %>
+
+
+</div>
+<%= render 'layouts/footer' %>
+</body>
+
+</html>

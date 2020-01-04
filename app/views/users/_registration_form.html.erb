@@ -1,0 +1,29 @@
+<!-- Registration -->
+<div class="w-full md:w-1/2 px-3 pl-8">
+  <%= form_with(model: @user, local: true) do |f| %>
+    <h1 class="font-hairline text-5xl mb-6 text-center"><%= t(:register) %></h1>
+    <div class="border-custom p-8 border-t-8 bg-white mb-6 rounded-lg shadow-lg">
+
+      <div class="mb-4">
+        <%= f.label :email, class: "font-bold text-grey-darker block mb-2" %>
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "block appearance-none w-full bg-white border border-grey-light hover:border-grey px-2 py-2 rounded shadow" %>
+      </div>
+
+      <div class="mb-4">
+        <%= f.label t(:password), class: "font-bold text-grey-darker block mb-2" %>
+        <%= f.password_field :password, autocomplete: "new-password", class: "block appearance-none w-full bg-white border border-grey-light hover:border-grey px-2 py-2 rounded shadow" %>
+      </div>
+
+
+      <div class="mb-4">
+        <%= f.label t(:confirm_password), class: "font-bold text-grey-darker block mb-2" %>
+        <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "block appearance-none w-full bg-white border border-grey-light hover:border-grey px-2 py-2 rounded shadow" %>
+      </div>
+
+      <div class="flex items-center justify-center">
+        <%= f.submit t(:register), class: "bg-custom hover:bg-black text-white hover:text-custom font-bold py-2 px-4 rounded" %>
+      </div>
+
+    </div>
+  <% end %>
+</div>

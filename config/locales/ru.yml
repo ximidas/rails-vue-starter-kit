@@ -1,0 +1,18 @@
+ru:
+  text: "Текст"
+  language: "Язык"
+
+  enter: 'Вход'
+  enter_cabinet: 'Вход в кабинет'
+  register: 'Регистрация'
+  forgot_password: 'Забыли пароль?'
+  remember_me: 'Запомнить'
+  password: 'Пароль'
+  confirm_password: 'Подтвердите пароль'
+  cabinet: 'Кабинет'
+  exit: 'Выход'
+  attention: 'Внимание'
+  email_or_password_wrong: 'Указанный e-mail не зарегистрирован, либо указан неверный пароль'
+  save: 'Сохранить'
+  control_panel: 'Панель управления'
+  user_registered: 'Пользователь успешно зарегистрирован'
