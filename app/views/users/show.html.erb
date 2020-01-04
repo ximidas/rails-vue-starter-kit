@@ -1,0 +1,43 @@
+<div class="flex mb-4">
+
+  <%= render 'users/cabinet_nav' %>
+
+  <div class="w-full px-3 pl-8">
+    <%= form_with(model: @user, local: true) do |f| %>
+      <div class="border-custom p-8 border-t-8 bg-white w-full my-2 rounded-lg shadow-lg">
+        <% unless notice.nil? %>
+          <div class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md mb-5" role="alert">
+            <div class="flex">
+              <div class="py-1"><svg class="fill-current h-6 w-6 text-teal-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z"/></svg></div>
+              <div>
+                <p class="font-bold"><%= notice %></p>
+              </div>
+            </div>
+          </div>
+        <% end %>
+        <div class="mb-4">
+          <%= f.label :email, class: "font-bold text-grey-darker block mb-2" %>
+          <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "block appearance-none w-full bg-white border border-grey-light hover:border-grey px-2 py-2 rounded shadow" %>
+        </div>
+
+        <div class="mb-4">
+          <%= f.label t(:password), class: "font-bold text-grey-darker block mb-2" %>
+          <%= f.password_field :password, autocomplete: "new-password", class: "block appearance-none w-full bg-white border border-grey-light hover:border-grey px-2 py-2 rounded shadow" %>
+        </div>
+
+
+        <div class="mb-4">
+          <%= f.label t(:confirm_password), class: "font-bold text-grey-darker block mb-2" %>
+          <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "block appearance-none w-full bg-white border border-grey-light hover:border-grey px-2 py-2 rounded shadow" %>
+        </div>
+
+        <div class="flex items-center justify-center">
+          <%= f.submit t(:save), class: "bg-custom hover:bg-black text-white hover:text-custom font-bold py-2 px-4 rounded" %>
+        </div>
+
+      </div>
+    <% end %>
+  </div>
+
+
+</div>

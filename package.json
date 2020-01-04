@@ -1,0 +1,25 @@
+{
+  "name": "railsvuejs",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.8",
+    "@fortawesome/fontawesome-free-solid": "^5.0.13",
+    "@rails/actioncable": "^6.0.0-alpha",
+    "@rails/activestorage": "^6.0.0-alpha",
+    "@rails/ujs": "^6.0.0-alpha",
+    "@rails/webpacker": "^4.0.7",
+    "axios": "^0.19.0",
+    "i18n-js": "^3.3.0",
+    "tailwind": "^4.0.0",
+    "turbolinks": "^5.2.0",
+    "vue": "^2.6.10",
+    "vue-loader": "^15.7.1",
+    "vue-template-compiler": "^2.6.10",
+    "vue-turbolinks": "^2.0.4"
+  },
+  "version": "0.1.0",
+  "devDependencies": {
+    "tailwindcss": "^1.1.2",
+    "webpack-dev-server": "^3.8.0"
+  }
+}

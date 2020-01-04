@@ -1,0 +1,18 @@
+en:
+  text: "Text"
+  language: "Language"
+
+  enter: 'Enter'
+  enter_cabinet: 'Enter in account'
+  register: 'Registration'
+  forgot_password: 'Forgot password?'
+  remember_me: 'Remember'
+  password: 'Password'
+  confirm_password: 'Confirm password'
+  cabinet: 'Account'
+  exit: 'Exit'
+  attention: 'Attention'
+  email_or_password_wrong: 'The specified e-mail is not registered, or the password is incorrect'
+  save: 'Save'
+  control_panel: 'Dashboard'
+  user_registered: 'User successfully registered'
