@@ -8,6 +8,7 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 <body lang="<%= I18n.locale %>" class="bg-gray-200 font-sans leading-normal tracking-normal">
+<div id="app">
 <%= render 'layouts/header' %>
 
 
@@ -16,6 +17,7 @@
   <%= yield %>
 
 
+</div>
 </div>
 <%= render 'layouts/footer' %>
 </body>

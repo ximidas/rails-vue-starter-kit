@@ -26,41 +26,22 @@ const images = require.context('../images', true);
 //const imagePath = (name) => images(name, true)
 
 //VueJS
-import Vue from 'vue';
+/*import Vue from 'vue';*/
+import Vue from 'vue/dist/vue.esm'
 import App from '../app';
 import axios from 'axios';
-
 Vue.prototype.$http = axios;
 
+import SecondComponent from "../components/VueComponent";
 
 document.addEventListener('turbolinks:load', () => {
-    const el = document.getElementById("app");
-    const props = JSON.parse(el.getAttribute('data'));
-
-    if (el != null && props != null) {
-        const app = new Vue({
-            el,
-            render: h => h(App, { props }),
-
-        });
-
-        console.log(app);
-    }
-
-
-});
-
-import VueComponent from "../components/VueComponent";
-
-document.addEventListener('turbolinks:load', () => {
-    const el = document.getElementById("vuecomponent");
-    const props = JSON.parse(el.getAttribute('data'));
-    if (el != null && props != null) {
-        const vuecomponent = new Vue({
-            el,
-            render: h => h(VueComponent, { props }),
-        })
-
-        console.log(vuecomponent)
-    }
-});
+   new Vue({
+     el: '#app',
+     data: () => {
+       return {
+         message: 'Message from application.js file'
+       }
+     },
+     components: { App, SecondComponent }
+   })
+ });
