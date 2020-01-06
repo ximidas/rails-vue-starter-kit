@@ -1,5 +1,2 @@
-<% props = {
-    current_locale: I18n.locale
-}.to_json
-%>
-<div id="vuecomponent" data="<%= props %>"></div>
+<% @prop_from_rails_view = 'PropFromRailsView' %>
+<second-component :prop_from_rails_view="<%= @prop_from_rails_view.to_json %>"></second-component>
