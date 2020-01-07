@@ -28,6 +28,8 @@ const images = require.context('../images', true);
 //VueJS
 /*import Vue from 'vue';*/
 import Vue from 'vue/dist/vue.esm'
+import TurbolinksAdapter from 'vue-turbolinks';
+Vue.use(TurbolinksAdapter)
 import App from '../app';
 import axios from 'axios';
 Vue.prototype.$http = axios;
